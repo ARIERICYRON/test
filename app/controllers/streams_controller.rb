@@ -6,7 +6,7 @@ class StreamsController < ApplicationController
 
     def show
         streams = Stream.find_by(id: params[:id]) 
-        render json: stream
+        render json: streams
     end
 end
 

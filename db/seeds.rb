@@ -8,7 +8,7 @@
 
 puts "seeding"
 #streams = Stream.create([{stream_name: "form one"}, {stream_name: "form two"}, {stream_name: "form three"}, {stream_name: "form four"}])
-Students.create([{name: "brian odhiambo", age: "19", class_position: "5", home_addresss: "kilimani"},
+students = Student.create([{name: "brian odhiambo", age: "19", class_position: "5", home_addresss: "kilimani"},
 {name: "kevin odinga", age: "24", class_position: "56", home_addresss: "kibra" } ,
 {name: "perninys patrick", age: "23", class_position: "34", home_addresss: "runda" },
 {name: "cyron arieri", age: "25", class_position: "1", home_addresss: "imara daima"},
