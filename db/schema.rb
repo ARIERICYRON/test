@@ -15,8 +15,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_23_095236) do
   enable_extension "plpgsql"
 
   create_table "enrollments", force: :cascade do |t|
-    t.string "class_id"
-    t.string "stude_id"
+    t.string "stream_id"
+    t.string "student_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

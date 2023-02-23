@@ -18,13 +18,14 @@ class StudentsController < ApplicationController
     end
 
  #Destroying student Data
-    def Destroy
+    def destroy
         student = Student.find_by(id: params[:id])
         if student
             student.destroy
             head :no_content
         else
             render json: { error: "student not found"}, status: :not_found
+        end
     end
 
  private
@@ -32,5 +33,4 @@ class StudentsController < ApplicationController
     def student_params
         params.permit(:name, :age, :class_position, :home_addresss)
     end
-end
 end
