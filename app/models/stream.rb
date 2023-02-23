@@ -1,4 +1,4 @@
 class Streams < ApplicationRecord
     has_many :enrollments, dependent: :destroy
-    has_many :students, through: :enrollments
+    has_many :student, through: :enrollments
 end

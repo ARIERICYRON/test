@@ -1,4 +1,4 @@
 class Enrollment < ApplicationRecord
     belongs_to :student
-    belongs_to :class
+    belongs_to :stream
 end
