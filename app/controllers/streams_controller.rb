@@ -1,6 +1,6 @@
 class StreamsController < ApplicationController
     def index
-        streams = Stream.all
+        streams = Streams.all
         render json: streams
     end
 

@@ -1,3 +1,4 @@
 class Student < ApplicationRecord
-    belongs_to :streams
+    has_many :enrollments, dependent: :destroy
+    has_many :classes, through: :enrollments
 end
